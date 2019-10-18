@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gitpod</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css">
+</head>
+
+<body style="background-color:green;">
+	<div class="container p-5">
+		<div class="col-md-8 offset-md-2">
+		<h1 class="p-5" style="color:#fff">Palmeiras o Maior Campeão de todos os tempos</h1>
+			<form action="/create" method="POST" class="card card-body">
+				<div class="form-group">
+					<input class="form-control" type="text" name="task" placeholder="Nova tarefa" autofocus>
+                </div>
+                <div class="form-group">
+					<input class="form-control" type="text" name="description" placeholder="Descrição">
+                </div>
+                <div class="form-group">
+					<button class="btn btn-primary btn-block">Salvar</button>
+                </div>
+			</form>
+            <% tasks.forEach((task)=>{ %>
+                <div class="card card-body">
+                    <h1><%= task.task %></h1>
+                <p><%= task.description%></p>
+                </div>
+            <% }) %>
+		</div>
+	</div>
+
+</body>
+
+</html>

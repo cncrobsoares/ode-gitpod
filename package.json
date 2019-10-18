@@ -1,0 +1,28 @@
+{
+  "name": "ode-gitpod",
+  "version": "1.0.0",
+  "description": "180920190731 - ok",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cncrobsoares/ode-gitpod.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cncrobsoares/ode-gitpod/issues"
+  },
+  "homepage": "https://github.com/cncrobsoares/ode-gitpod#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
